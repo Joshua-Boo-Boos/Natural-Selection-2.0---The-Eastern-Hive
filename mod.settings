@@ -1,0 +1,48 @@
+name        = "Natural Selection 2.0 - The Eastern Hive"
+source_dir  = "source"
+output_dir  = "output"
+description = [=[Ask for permission before taking ANY content from this mod. I reserve the right to remove this mod at ANY time.
+
+| What is this
+- Natural Selection 2.0
+- Aimed 12v12 and further
+- Extension for original ns2 gamemode
+- Provides lots more strategic options to both teams.
+
+| What it includes
+- A bunch of gameplay tweaks.
+- A lot techs added.
+
+For Both Teams
+- Res kill grants p-res.
+- Overhauled power system.
+- Ragdolls lasting a number of seconds.
+- Extra weapons for both teams.
+
+For Marines
+- [Standard]&[Explosive] Tech branch.
+- [Nanoarmor]&[LifeSustain] Research.
+- MachineGun,Knife,SubmachineGun,Revolver
+- Cannnon
+- CombatBuilder to build utilities as marines.
+- Alt attack mod for [Shotgun]&[Grenade Launcher]
+
+For Aliens
+- Remove cyst restriction for tunnel(still needs gorge).
+- Instant tunnel travel research to immediately travel through tunnels.
+- Most unused upgrades been boosted (includes camouflage).
+- Prowler (Modifed) to reel enemy with his rappelsilk ability.
+- Rework gorges bilemine to babbler hive.
+- Pheromones will spawn a babbler on hit.
+- Onos devour (tweaked).
+- Xenocide with 7 biomass.
+
+| Further more
+- Please join The Eastern Hive's Discord community: https://discord.gg/RAnE4U7usT
+- About NS2.0-TEH: The mod content is being updated by Joshua-Boo-Boos.
+- Feel free to contact me if there are any problems.
+- Forked from NS2.0-CN, which can be freely forked, after agreement by the coder StriteR. upon starting a server.]=]
+image       = "preview.jpg"
+tag_modtype = "Gameplay Tweak"
+tag_support = "Must be run on Server"
+publish_id = 3667208695
