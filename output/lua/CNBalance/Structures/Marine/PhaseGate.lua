@@ -128,25 +128,11 @@ function PhaseGate:Phase(user)
             if not instantPhase then
                 local playerAboveLimit = GetPlayersAboveLimit(self:GetTeamNumber())
                 gateCount = gateCount or 2
-
-                -- Count human (non-virtual) players on this team
-                local humanCount = 0
-                for _, client in ipairs(Server.GetClients()) do
-                    if client and not client:GetIsVirtual() then
-                        local player = client:GetControllingPlayer()
-                        if player and player:GetTeamNumber() == self:GetTeamNumber() then
-                            humanCount = humanCount + 1
-                        end
-                    end
-                end
-
-                if humanCount > 16 then
-                    phaseTime = kPhaseCooldownBase * 1.19
-                else
-                    phaseTime = kPhaseCooldownBase
-                            + math.max(0, gateCount - 2) * kPhaseCooldownPerGate
-                            + playerAboveLimit * kPhaseCooldownPerPlayerAboveLimit
-                end
+                
+                phaseTime = kPhaseCooldownBase * 1.19
+                -- phaseTime = kPhaseCooldownBase
+                --         + math.max(0, gateCount - 2) * kPhaseCooldownPerGate
+                --         + playerAboveLimit * kPhaseCooldownPerPlayerAboveLimit
             end
 
             self.cooldownNextPhase = phaseTime
