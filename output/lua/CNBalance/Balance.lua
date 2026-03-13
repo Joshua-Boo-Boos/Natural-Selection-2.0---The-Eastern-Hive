@@ -84,7 +84,7 @@ kMineResearchTime  = 45
 kGrenadeTechResearchCost = 10   --10
 kGrenadeTechResearchTime = 45   --45
 
-kMaxARCs = 6
+kMaxARCs = 5 -- Was 6
 
 kMineCost = 5 -- Was 20 p-res for 4 mines
 kMineDamage = 130
@@ -216,10 +216,10 @@ kSubMachineGunPointValue = 0
 kRifleMeleeDamage = 10
 
 --Knife
-kKnifeDamage = 20
-kKnifeRange = 1.3
+kKnifeDamage = 30
+kKnifeRange = 1.5
 kKnifeCost = 0
-kKnifeDamageType = kDamageType.Structural
+kKnifeDamageType = kDamageType.Light
 --
 
 kAxeDamage = 25
@@ -247,7 +247,7 @@ kFlamethrowerDropCooldown = 0
 kFirePlayerDOTDelay = 1
 kPlayerFireDOTPerSecond = 4
 kDragonBreathPlayerFireDamagePerStack = { 0.7 , 0.8 , 0.9 , 1 }  kFlameThrowerPlayerFireDamagePerStack = { 5 , 5 , 5 , 5 }
-kPlayerFireDamageMaxStack = { 12, 16, 20, 24 }
+kPlayerFireDamageMaxStack = { 10, 14, 18, 22 } -- Was { 12, 16, 20, 24 }
 
 kFireStructureDOTDelay = 0.5
 kStructureFireDOTPerSecond = 8.0
@@ -255,7 +255,7 @@ kDragonBreathStructureFireDamagePerStack = { kStructureFireDOTPerSecond / 100, k
 kFlamethrowerStructureDamagePerStack = { kStructureFireDOTPerSecond, kStructureFireDOTPerSecond, kStructureFireDOTPerSecond, kStructureFireDOTPerSecond }
 kStructureFireDamageMaxStack = { kStructureFireDOTPerSecond * 3 , kStructureFireDOTPerSecond * 4, kStructureFireDOTPerSecond * 5, kStructureFireDOTPerSecond * 6  }
 
-kMinigunDamage = 10
+kMinigunDamage = 8 -- Was 10
 kMinigunDamageType = kDamageType.Normal
 kRailgunDamage = 10
 kRailgunChargeDamage = 154
@@ -284,7 +284,7 @@ kInfantryPortalCost = 15
 kRoboticsFactoryCost = 10
 kUpgradeRoboticsFactoryCost = 5
 kUpgradeRoboticsFactoryTime = 20
-kARCDamage = 570
+kARCDamage = 530 -- Was 570
 kARCCost = 15
 kARCBuildTime = 5
 kMACCost = 4
@@ -310,8 +310,8 @@ kExosuitTechResearchTime = 90
 
 kRoboticsFactoryBuildTime = 8
 
-kJetpackCost = 25
-kJetpackDropCost = 18
+kJetpackCost = 20
+kJetpackDropCost = 16
 kJetpackDropCooldown = 0
 
 --Cannon
@@ -328,7 +328,7 @@ kCannonDamageType = kDamageType.Exosuit
 
 kDualExosuitCost = 55
 kDualRailgunExosuitCost = 55
-kDualExosuitDropCost = 36
+kDualExosuitDropCost = 40
 kExosuitCost = kDualExosuitCost   --Used in some ways... (newcomer protection from )
 
 kOnosDevourCost = 10
@@ -350,8 +350,8 @@ kGorgeEggCost = 15
 kLerkCost = 21
 kLerkEggCost = 30
 kFadeCost = 37
-kFadeEggCost = 70
-kOnosCost = 62
+kFadeEggCost = 50
+kOnosCost = 55
 kOnosEggCost = 100
 
 kTunnelEntranceCost = 7
@@ -487,14 +487,14 @@ kChargeDamage = 12
 kBoneShieldCooldown = 16
 kBoneShieldMinimumEnergyNeeded = 0
 kBoneShieldMinimumFuel = 0.15
-kBoneShieldMaxDuration = 10
+kBoneShieldMaxDuration = 15 -- Was 10
 
 kStompEnergyCost = 40
 kStompDamageType = kDamageType.Structural
 kStompDamage = 60
 kStompFirstPDamage = 60  kStompDisruptTime = 3
-kStompSecondPDamage = 20 kStompSecondDisruptTime = 0
-kStompElseDamage = 10
+kStompSecondPDamage = 30 kStompSecondDisruptTime = 0
+kStompElseDamage = 20
 kStompRange = 12 
 
 kDisruptMarineTimeout = 4
