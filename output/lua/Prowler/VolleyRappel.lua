@@ -17,13 +17,13 @@ local kAttackDuration4 = Shared.GetAnimationLength("models/alien/prowler/prowler
 
 -- Burst-fire parameters: kBurstShotCount shots per click with a short delay between each
 local kBurstShotCount = 4
-local kBurstShotDelay = 0.15  -- seconds between each burst shot
+local kBurstShotDelay = 0.065  -- seconds between each burst shot
 
 -- Damage falloff: full damage up close, linear falloff to minimum at range
 local kMaxDamagePerShot = 60 / kBurstShotCount
 local kMinDamagePerShot = 10 / kBurstShotCount
 local kFalloffStartDistance = 4     -- full damage up to this distance
-local kFalloffEndDistance = 9       -- minimum damage beyond this distance
+local kFalloffEndDistance = 16       -- minimum damage beyond this distance
 
 local networkVars =
 {
@@ -112,10 +112,10 @@ function VolleyRappel:GetBarrelPoint()
 end
 
 function VolleyRappel:GetDeathIconIndex()
-    if self.primaryAttacking then
-        return kDeathMessageIcon.Volley
-    else
+    if self.secondaryAttacking then
         return RappelMixin:GetDeathIconIndex()
+    else
+        return kDeathMessageIcon.Volley
     end
 end
 
@@ -130,7 +130,7 @@ function VolleyRappel:OnPrimaryAttack(player)
     if hasEnergy and self.lastAttackedAt == 0 and not player:GetPrimaryAttackLastFrame() then
         self.lastAttackedAt = Shared.GetTime()
         self.primaryAttacking = true
-    elseif hasEnergy and self.lastAttackedAt and Shared.GetTime() >= self.lastAttackedAt + kBurstShotCount * kBurstShotDelay + 0.05 and not player:GetPrimaryAttackLastFrame() then
+    elseif hasEnergy and self.lastAttackedAt and Shared.GetTime() >= self.lastAttackedAt + kBurstShotCount * kBurstShotDelay + 0.365 and not player:GetPrimaryAttackLastFrame() then
         self.lastAttackedAt = Shared.GetTime()
         self.primaryAttacking = true
     else
@@ -162,7 +162,7 @@ function VolleyRappel:OnUpdateAnimationInput(modelMixin)
     modelMixin:SetAnimationInput("ability", "bite")
     
     local activityString = (self.primaryAttacking and Shared.GetTime() > self.timeDrawCooldown) and "primary" or "none"
-    modelMixin:SetAnimationInput("activity", activityString)    
+    modelMixin:SetAnimationInput("activity", activityString)
 end
 
 -- Fire a single bullet in the player's aim direction with distance-based damage falloff
