@@ -106,6 +106,8 @@ local function CreateVortex(self, player)
     
     local vortex = CreateEntity( Vortex.kMapName, endPoint, player:GetTeamNumber() )
     vortex:SetOwner(player)
+    vortex.movementDirection = viewCoords.zAxis
+    vortex.impacted = false
     return vortex
 
 end
@@ -119,6 +121,12 @@ function VortexShadowStep:DoAttack()
         local player = self:GetParent()
         if player then
             if player:GetEnergy() >= self:GetEnergyCost() then
+                local vorticesOwnedByPlayer = GetEntities("Vortex")
+                for _, vortex in ipairs(vorticesOwnedByPlayer) do
+                    if vortex:GetOwner() == player then
+                        DestroyEntity(vortex)
+                    end
+                end
                 CreateVortex(self,  player)
                 player:DeductAbilityEnergy(self:GetEnergyCost())
             end
