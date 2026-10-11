@@ -1,4 +1,4 @@
--- ======= NS2.0-TEH-Main: CNBalance/CommMapTools_Client.lua =======
+-- ======= NS2.0-TEH-Event: CNBalance/CommMapTools_Client.lua =======
 --
 -- CLIENT half (loaded via a "post" hook on lua/Client.lua). Handles:
 --   * The N-key PING: trace the local player's aim, send GC_Ping (5s self-cooldown for feel).

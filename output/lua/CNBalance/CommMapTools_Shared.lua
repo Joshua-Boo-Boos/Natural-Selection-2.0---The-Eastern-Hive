@@ -1,4 +1,4 @@
--- ======= NS2.0-TEH-Main: CNBalance/CommMapTools_Shared.lua =======
+-- ======= NS2.0-TEH-Event: CNBalance/CommMapTools_Shared.lua =======
 --
 -- SHARED half of two features (loaded on BOTH client and server via a "post" hook on
 -- lua/NetworkMessages.lua, so Shared.RegisterNetworkMessage is available):

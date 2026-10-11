@@ -1,4 +1,4 @@
--- ======= NS2.0-TEH-Main: CNBalance/GUIMinimapFrame.lua =======
+-- ======= NS2.0-TEH-Event: CNBalance/GUIMinimapFrame.lua =======
 --
 -- CLIENT post-hook on lua/GUIMinimapFrame.lua. Commander ORDER ICONS on the fullscreen map
 -- (replaces the old freehand commander drawing). The icon DATA lives in gGCLocalIcons (kept in sync

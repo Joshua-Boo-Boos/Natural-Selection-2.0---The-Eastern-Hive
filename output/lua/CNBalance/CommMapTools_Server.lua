@@ -1,4 +1,4 @@
--- ======= NS2.0-TEH-Main: CNBalance/CommMapTools_Server.lua =======
+-- ======= NS2.0-TEH-Event: CNBalance/CommMapTools_Server.lua =======
 --
 -- SERVER half of the ping + commander order-icon features. Loaded via a "post" hook on
 -- lua/NS2Gamerules.lua - which loads AFTER NetworkMessages.lua (so the shared file has already
