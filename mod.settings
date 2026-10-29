@@ -1,7 +1,7 @@
 name        = "Natural Selection 2.0 - The Eastern Hive"
 source_dir  = "source"
 output_dir  = "output"
-description = [=[Ask for permission before taking ANY content from this mod. I reserve the right to remove this mod at ANY time.
+description = "Ask for permission before taking ANY content from this mod. I reserve the right to remove this mod at ANY time.
 
 | What is this
 - Natural Selection 2.0
@@ -41,7 +41,7 @@ For Aliens
 - Please join The Eastern Hive's Discord community: https://discord.gg/RAnE4U7usT
 - About NS2.0-TEH: The mod content is being updated by Joshua-Boo-Boos.
 - Feel free to contact me if there are any problems.
-- Forked from NS2.0-CN, which can be freely forked, after agreement by the coder StriteR. upon starting a server.]=]
+- Forked from NS2.0-CN, which can be freely forked, after agreement by the coder StriteR. upon starting a server."
 image       = "preview.jpg"
 tag_modtype = "Gameplay Tweak"
 tag_support = "Must be run on Server"
